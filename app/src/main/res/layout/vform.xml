@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/playpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/play_48dp" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/playpause"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:layout_width="401dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205">
+
+        <LinearLayout
+            android:id="@+id/llcontainer"
+            android:layout_width="36dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.081">
+
+            <TextView
+                android:id="@+id/tvCoord"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="TextView"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivGuide"
+                android:layout_width="19dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/redguide2" />
+
+            <ImageView
+                android:id="@+id/ivGuideBall"
+                android:layout_width="9dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/greycircle" />
+
+
+        </LinearLayout>
+
+
+        <SeekBar
+            android:id="@+id/audioskBar"
+            android:layout_width="392dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.553" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
