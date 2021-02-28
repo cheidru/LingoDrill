@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_select_file"
+        android:title="@string/ic_SelectFile"
+        android:icon="@drawable/baseline_playlist_add_white_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/ic_Settings"
+        android:icon="@drawable/sharp_settings_white_24dp"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_help"
+        android:title="@string/ic_Help"
+        android:icon="@drawable/baseline_help_outline_white_24dp"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom" />
+
+</menu>
